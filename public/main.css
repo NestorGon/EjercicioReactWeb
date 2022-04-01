@@ -1,0 +1,24 @@
+#navbar {
+    background-color: #c4c4c4;
+}
+#brand {
+    font-family: 'Sevillana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    margin-left: 59px;
+}
+.navlink {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    margin-right: 50px;
+}
+.navlink:hover {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration-line: underline;
+}
