@@ -5,9 +5,9 @@ function MuseumDetail(props) {
         <div className="container">
             <p>Home &gt; Museos</p>
             <div id="title">
-                <strong>Museo {props.data.name}: Obras principales</strong>
+                <strong>MUSEO {props.data.name}: Obras principales</strong>
             </div>
-            <div className="container">
+            <div className="container" id="museum-row">
                 {props.data.artworks.map((item) => (
                     <div key={item.id}>
                         <Art data={item}/>
