@@ -1,8 +1,12 @@
 import Art from "./art";
+import './museums.css';
 function MuseumDetail(props) {
     return (
         <div className="container">
-            <strong>Museo {props.data.name}: Obras principales</strong>
+            <p>Home &gt; Museos</p>
+            <div id="title">
+                <strong>Museo {props.data.name}: Obras principales</strong>
+            </div>
             <div className="container">
                 {props.data.artworks.map((item) => (
                     <div key={item.id}>

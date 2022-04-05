@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Museum from "./museum";
 import MuseumDetail from "./museumDetail";
+import './museums.css';
 
 function Museums() {
     let [museums,setMuseums] = useState([]);
@@ -21,8 +22,11 @@ function Museums() {
     if (!clicked) {
         return (
             <div className="container">
-                <strong>Museos</strong>
-                <div className="row">
+                <p>Home &gt; Museos</p>
+                <div id="title">
+                    <strong>MUSEOS</strong>
+                </div>
+                <div className="row" id="museum-row">
                     {museums.map((item) => (
                         <div className="col-3" key={item.id} onClick={()=>handleClick(item)}>
                             <Museum data={item}/>

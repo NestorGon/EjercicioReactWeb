@@ -1,4 +1,18 @@
 import './banner.css';
+import * as ReactDOMClient from 'react-dom/client';
+import Museums from './museums';
+
+let handleClick = () => {
+    const container = document.getElementById("root");
+    const root = ReactDOMClient.createRoot(container);
+
+    root.render(
+        <>
+            <Banner/>
+            <Museums/>
+        </>
+    );
+};
 function Banner() {
     return(
         <nav className="navbar navbar-expand-lg navbar-light" id="navbar">
@@ -10,7 +24,7 @@ function Banner() {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                    <a className="nav-link navlink active" href="#">Museos</a>
+                    <a className="nav-link navlink active" onClick={handleClick}>Museos</a>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link navlink active" href="#">Artistas</a>
@@ -24,4 +38,5 @@ function Banner() {
         </nav>
     );
 }
+
 export default Banner;

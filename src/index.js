@@ -11,3 +11,5 @@ root.render(
         <Museums/>
     </>
 );
+
+export default root;
